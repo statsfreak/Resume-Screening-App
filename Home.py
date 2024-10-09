@@ -33,9 +33,11 @@ add_bg_from_url()
 
 
 # Path to your header image
-header_image_path = "C:/Users/weichee/Documents/ai bootcamp/headerc.png"
+#header_image_path = "C:/Users/weichee/Documents/ai bootcamp/headerc.png"
+header_image_path = "headerc.png"
 header_image = Image.open(header_image_path)
-header_image_path2 = "C:/Users/weichee/Documents/ai bootcamp/screenshot2.png"
+#header_image_path2 = "C:/Users/weichee/Documents/ai bootcamp/screenshot2.png"
+header_image_path2 = "screenshot2.png"
 header_image2 = Image.open(header_image_path2)
 
 # Display the header image
