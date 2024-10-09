@@ -1,3 +1,5 @@
+__import__('pysqlite3')
+import sys
 import streamlit as st
 import pandas as pd
 import docx2txt
@@ -25,6 +27,7 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 import tiktoken
 from helper_functions.utility import check_password  
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3') # in order for chromadb to run need to set this
 
 # Load environment variables from the .env file
 if load_dotenv('.env'):
