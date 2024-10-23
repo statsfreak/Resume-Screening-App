@@ -604,11 +604,11 @@ if 'results' not in st.session_state:
 
 # Sample resumes with submission dates (simulate automated extraction)
 sample_resumes = [
-    {'filename': 'resume1_KENNY SIM.docx', 'submission_date': datetime.date(2023, 9, 1)},
-    {'filename': 'resume2_crystal.docx', 'submission_date': datetime.date(2023, 9, 5)},
-    {'filename': 'resume3_mark.docx', 'submission_date': datetime.date(2023, 9, 10)},
-    {'filename': 'resume4_david.docx', 'submission_date': datetime.date(2023, 9, 15)},
-    {'filename': 'resume5_linus_ds.docx', 'submission_date': datetime.date(2023, 10, 15)}
+    {'filename': 'resume1_KENNY SIM.docx', 'submission_date': datetime.date(2024, 9, 1)},
+    {'filename': 'resume2_crystal.docx', 'submission_date': datetime.date(2024, 9, 5)},
+    {'filename': 'resume3_mark.docx', 'submission_date': datetime.date(2024, 9, 10)},
+    {'filename': 'resume4_david.docx', 'submission_date': datetime.date(2024, 9, 15)},
+    {'filename': 'resume5_linus_ds.docx', 'submission_date': datetime.date(2024, 10, 15)}
 ]
 
 # Create tabs for resume source selection
@@ -623,7 +623,7 @@ with tabs[0]:
         job_title = st.text_input("Enter Job Title/Code", value='e.g. Data Scientist JD01')
 
         # Date range picker for resume submission date
-        date_range = st.date_input("Select Resume Submission Date Range", value=(datetime.date(2023, 9, 1), datetime.date(2023, 9, 30)))
+        date_range = st.date_input("Select Resume Submission Date Range", value=(datetime.date(2024, 9, 1), datetime.date(2024, 9, 30)))
         if isinstance(date_range, tuple):
             start_date, end_date = date_range
         else:
@@ -1068,7 +1068,7 @@ if 'df_results' in st.session_state:
 
 # Assuming 'results' is stored in session_state after processing
 
-if st.button("Visualise Relevancy of Past Experience"):
+#if st.button("Visualise Relevancy of Past Experience"):
     if 'results' in st.session_state:
         results = st.session_state.results
         df_results = st.session_state['df_results']
