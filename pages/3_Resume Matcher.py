@@ -604,11 +604,11 @@ if 'results' not in st.session_state:
 
 # Sample resumes with submission dates (simulate automated extraction)
 sample_resumes = [
-    {'filename': 'resume1_KENNY SIM.docx', 'submission_date': datetime.date(2024, 9, 1)},
+    {'filename': 'resume1_kenny sim.docx', 'submission_date': datetime.date(2024, 9, 1)},
     {'filename': 'resume2_crystal.docx', 'submission_date': datetime.date(2024, 9, 5)},
     {'filename': 'resume3_mark.docx', 'submission_date': datetime.date(2024, 9, 10)},
     {'filename': 'resume4_david.docx', 'submission_date': datetime.date(2024, 9, 15)},
-    {'filename': 'resume5_linus_ds.docx', 'submission_date': datetime.date(2024, 10, 15)}
+    {'filename': 'resume5_linus_ds.docx', 'submission_date': datetime.date(2024, 9, 30)}
 ]
 
 # Create tabs for resume source selection
