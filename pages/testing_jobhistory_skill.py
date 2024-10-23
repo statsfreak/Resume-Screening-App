@@ -1067,8 +1067,8 @@ if 'df_results' in st.session_state:
 #    st.info("Please fill out the form and submit to process the resumes.")
 
 # Assuming 'results' is stored in session_state after processing
-    st.subheader("Relevancy of Past Experience")
-#if st.button("Visualise Relevancy of Past Experience"):
+st.subheader("Relevancy of Past Experience")
+if st.button("Visualise Relevancy of Past Experience"):
     if 'results' in st.session_state:
         results = st.session_state.results
         df_results = st.session_state['df_results']
