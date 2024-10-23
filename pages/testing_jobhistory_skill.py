@@ -1063,11 +1063,11 @@ if 'df_results' in st.session_state:
                 st.error(f"Failed to send email to {recipient_email}")
         else:
             st.error("Please enter a recipient email address.")
-#else:
+
 #    st.info("Please fill out the form and submit to process the resumes.")
 
 # Assuming 'results' is stored in session_state after processing
-
+    st.subheader("Relevancy of Past Experience")
 #if st.button("Visualise Relevancy of Past Experience"):
     if 'results' in st.session_state:
         results = st.session_state.results
