@@ -604,7 +604,7 @@ if 'results' not in st.session_state:
 
 # Sample resumes with submission dates (simulate automated extraction)
 sample_resumes = [
-    {'filename': 'resume1_Kenny Sim.docx', 'submission_date': datetime.date(2024, 9, 1)},
+    {'filename': 'resume1_kenny sim.docx', 'submission_date': datetime.date(2024, 9, 1)},
     {'filename': 'resume2_crystal.docx', 'submission_date': datetime.date(2024, 9, 5)},
     {'filename': 'resume3_mark.docx', 'submission_date': datetime.date(2024, 9, 10)},
     {'filename': 'resume4_david.docx', 'submission_date': datetime.date(2024, 9, 15)},
