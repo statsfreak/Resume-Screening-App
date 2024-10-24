@@ -596,6 +596,27 @@ st.title("Automated Screening Tool For Recruitment Operations (ASTRO)")
 if not check_password():
     st.stop()
 
+
+# Creating the instructions with explicit "Step 1", "Step 2" labels
+instructions = """
+<div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px;">
+    <h4><strong>Instructions:</strong></h4>
+    <p><strong>Step 1:  Select Resume Extraction Mode: </strong> For automated resume extraction, enter 'Data Scientist JD01' or 'Marketing Executive JD02' and select 'September' as the date range for the preloaded resumes and job description.</p>
+    <p><strong>Step 2:  Adjust Skill Weights. </strong> Set the skill weights according to your preference and click 'Confirm Skill Weights'.</p>
+    <p><strong>Step 3:  Filter Results. </strong> Choose the top N results and filter by education level. Then, click 'Show Results' to display summaries.</p>
+    <p><strong>Step 4:  Re-adjusting Weights and Filters. </strong> 
+        <ul>
+            <li>To adjust the skill weights, repeat Step 2 and Step 3.</li>
+            <li>To change the filters, repeat Step 3.</li>
+        </ul>
+    </p>
+</div>
+"""
+
+# Display the instructions in Streamlit using markdown with embedded HTML
+st.markdown(instructions, unsafe_allow_html=True)
+
+
 # Initialize session state variables
 if 'matched_resumes' not in st.session_state:
     st.session_state.matched_resumes = False
