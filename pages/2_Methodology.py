@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 st.title("Methodology")
@@ -33,28 +32,41 @@ st.write("""
   - Resumes are split into meaningful chunks using `SemanticChunker` for better context understanding.
 - **Embedding Generation**:
   - Text embeddings are generated using OpenAI's embedding models.
+- **Skill Extraction and Weighting**:
+  - Key skills are extracted from the job description and assigned importance weights.
+  - Users can adjust skill weights to fine-tune the matching process.
 - **Similarity Scoring**:
-  - Cosine similarity is calculated between job description and resume embeddings to assess relevance.
+  - Cosine similarity is calculated between job description and resume embeddings to assess overall textual relevance.
+  - Additional similarity is computed between job responsibilities and the job description for each job history.
 - **Information Extraction**:
-  - An LLM (e.g., GPT-4) extracts structured data from resumes, such as education, work experience, and highlights.
+  - An LLM (e.g., GPT-4o-mini) extracts structured data from resumes, such as education, work experience, skills, and highlights.
 """)
 
 st.subheader("4. Filtering and Ranking")
 st.write("""
 - Resumes are filtered based on the minimum education level specified.
-- Candidates are ranked according to similarity scores.
+- Candidates are ranked according to combined similarity scores, which include:
+  - **Textual Similarity**: Overall relevance of the resume to the job description.
+  - **Skill Matching**: Alignment of candidate skills with job requirements, adjusted by user-defined weights.
+- **Adjustable Skill Weights**:
+  - Users can customize the importance of different skills in the matching process.
 """)
 
 st.subheader("5. Output and Visualization")
 st.write("""
 - Results are displayed in a ranked list with detailed summaries.
 - Users can adjust filters and view the top N candidates.
-- Provides an option to forward the summaries via email.
+- **Visualizations of Candidate Experience**:
+  - Interactive charts display the relevancy of candidates' past experiences over time.
+  - Hovering over data points shows detailed information such as candidate name and relevance score.
+- **Interactive Hover Information**:
+  - Provides specific data for the hovered line in visualizations, enhancing data interpretation.
+- **Email Forwarding**:
+  - Users can send summarized results to hiring managers directly from the application.
 """)
 
 st.subheader("Flowcharts")
 st.write("The following flowcharts illustrate the process flow for each use case:")
 
 # Include flowchart images (replace with your actual image paths)
-#st.image('images/manual_upload_flowchart.png', caption='Manual Upload Process Flow', use_column_width=True)
-#st.image('images/automated_extraction_flowchart.png', caption='Automated Resume Extraction Process Flow', use_column_width=True)
+st.image('images/flow chart.png', caption='Process Flow', use_column_width=True)
