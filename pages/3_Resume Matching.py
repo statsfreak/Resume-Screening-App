@@ -1077,7 +1077,7 @@ if 'df_results' in st.session_state:
 
             # Prepare the email content
             subject = "Resume Summaries"
-            message = "Dear Hiring Manager,\n\nPlease find attached the summaries of the top resumes.\n\nBest regards,\nYour Name"
+            message = "Dear Hiring Manager,\n\nPlease find attached the summaries of the top resumes.\n\nBest regards,\nASTRO team"
 
             # Send the email with attachment
             success = send_email(
