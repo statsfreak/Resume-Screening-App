@@ -604,15 +604,15 @@ instructions = """
     <p><strong>Step 1:  Select Resume Extraction Mode: </strong> 
         <ul>
             <li>For automated resume extraction, enter 'Data Scientist JD01' or 'Marketing Executive JD02' and select September as the date range for the 5 preloaded resumes and job description. Click 'Extract Resume' when done.</li>
-            <li>For manual upload, enter job description and upload the resume (uploading function does not work on GSIB laptop. Click 'Extract Resume' when done.</li>
+            <li>For manual upload, enter job description and upload the resume (uploading function does not work on GSIB laptop). Click 'Extract Resume' when done.</li>
         </ul>
     </p>
-    <p><strong>Step 2:  Adjust Skill Weights. </strong> Set the skill weights according to your preference and click 'Confirm Skill Weights'.</p>
+    <p><strong>Step 2:  Adjust Skill Weights. </strong> Set the skill weights according to your preference and click 'Confirm Skill Weights'. This step may run for a few minutes.</p>
     <p><strong>Step 3:  Filter Results. </strong> Choose the top N results and filter by education level. Then, click 'Show Results' to display summaries.</p>
     <p><strong>Step 4:  Re-adjusting Weights and Filters. </strong> 
         <ul>
             <li>To adjust the skill weights, repeat Step 2 and Step 3.</li>
-            <li>To change the filters, repeat Step 3.</li>
+            <li>To change only the filters, repeat Step 3.</li>
         </ul>
     </p>
 </div>
