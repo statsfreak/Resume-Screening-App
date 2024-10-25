@@ -601,7 +601,12 @@ if not check_password():
 instructions = """
 <div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px;">
     <h4><strong>Instructions:</strong></h4>
-    <p><strong>Step 1:  Select Resume Extraction Mode: </strong> For automated resume extraction, enter 'Data Scientist JD01' or 'Marketing Executive JD02' and select 'September' as the date range for the preloaded resumes and job description.</p>
+    <p><strong>Step 1:  Select Resume Extraction Mode: </strong> 
+        <ul>
+            <li>For automated resume extraction, enter 'Data Scientist JD01' or 'Marketing Executive JD02' and select September as the date range for the 5 preloaded resumes and job description. Click 'Extract Resume' when done.</li>
+            <li>For manual upload, enter job description and upload the resume (uploading function does not work on GSIB laptop. Click 'Extract Resume' when done.</li>
+        </ul>
+    </p>
     <p><strong>Step 2:  Adjust Skill Weights. </strong> Set the skill weights according to your preference and click 'Confirm Skill Weights'.</p>
     <p><strong>Step 3:  Filter Results. </strong> Choose the top N results and filter by education level. Then, click 'Show Results' to display summaries.</p>
     <p><strong>Step 4:  Re-adjusting Weights and Filters. </strong> 
